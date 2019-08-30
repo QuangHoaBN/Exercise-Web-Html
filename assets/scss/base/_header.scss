@@ -1,0 +1,92 @@
+/*...............................2.1 Header .......................*/
+$width-desktop:1366px;
+@mixin height($size,$height-header) {
+  height: $height-header - $size;
+}
+
+body {
+	font-family: Montserrat;
+	border:0;
+	padding:0;
+	line-height:33px;
+	color: #6d6b6c;
+}
+
+header {
+	@include height(0,89px);
+}
+.header-top {
+	@include height(56,89px);
+	background-color: #000;
+}
+.header-top-container {
+	margin-left:21px;
+	margin-right:21px;
+}
+.color {
+	color:#6d6b6c !important;
+}
+.color-black {
+	color: #000;
+}
+.hover:hover {
+	color:8262b5;
+	text-decoration: none;
+}
+.font-size-13px {
+	font-size:13px;
+}
+.font {
+	font-family: opensans;
+}
+.font-style {
+	font-weight: bold;
+	font-size: 13px;
+}
+.align-text-right {
+	text-align:right;
+}
+.margin-0 {
+	margin-bottom: 0;
+}
+.margin-right-10 {
+	margin-right: 10px;
+}
+.margin-left-10 {
+	margin-left: 10px;
+}
+.header-footer {
+	@include height(33,89px);
+}
+.container {
+	max-width: $width-desktop - 41px; 
+	@include height(33,89px);
+	margin-left: 21px;
+}
+.row {
+	@include height(33,89px);
+}
+.align-items-center {
+	align-items: center;
+}
+.pe-cart {
+	font-size: 21px !important;
+	margin-left:10px;
+}
+.pe-like {
+	font-size: 21px !important;
+	margin-right:10px;
+}
+hr {
+	margin-top:0;
+	margin-bottom: 20px;
+}
+.padding-0 {
+	padding-left: 0;
+}
+.font-weight {
+	font-weight: 700 !important;
+}
+.p-r-41px {
+	padding-right: 41px !important;
+}

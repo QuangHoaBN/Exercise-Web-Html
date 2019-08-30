@@ -1,0 +1,43 @@
+/*...............................2.2 Content .......................*/
+.content {
+	min-height: 768px;
+}
+.container-ads-producs {
+	width: 812px;
+	height: 1214px;
+	margin: 1px 277px 0 256px;
+}
+.ads{
+	height: 399px;
+	display: grid;
+	grid-template-columns: 534px 257px; 
+	grid-column-gap: 21px;
+	background-color: #fff;
+}
+.ads-col-2 {
+	display: grid;
+	grid-template-rows: 142px 235px;
+	grid-row-gap: 22px;
+}
+.ads-col-1 {
+	background-color: #eee;
+}
+.item-2 {
+	background-color: #cad7df;
+}
+.item-3 {
+	background-color: #dedede;
+}
+.bg-font-behind {
+	width: 267px;
+	height: 71px;
+	float: right;
+	margin: 164px 68px 163px 199px;
+	font-family: Montserrat;
+	font-size: 35.57pt;
+	font-weight: normal;
+}
+.font-weight-bold {
+	font-weight: bold;
+	font-size: 56.91pt;
+}
