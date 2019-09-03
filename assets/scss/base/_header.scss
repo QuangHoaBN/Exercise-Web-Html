@@ -10,6 +10,7 @@ body {
 	padding:0;
 	line-height:33px;
 	color: #6d6b6c;
+	width: $width-desktop;
 }
 
 header {
@@ -30,7 +31,7 @@ header {
 	color: #000;
 }
 .hover:hover {
-	color:8262b5;
+	color: #8262b5;
 	text-decoration: none;
 }
 .font-size-13px {
