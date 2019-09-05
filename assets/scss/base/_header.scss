@@ -10,7 +10,7 @@ body {
 	padding:0;
 	line-height:33px;
 	color: #6d6b6c;
-	width: $width-desktop;
+	max-width: $width-desktop;
 }
 
 header {
@@ -57,14 +57,6 @@ header {
 	margin-left: 10px;
 }
 .header-footer {
-	@include height(33,89px);
-}
-.container {
-	max-width: $width-desktop - 41px; 
-	@include height(33,89px);
-	margin-left: 21px;
-}
-.row {
 	@include height(33,89px);
 }
 .align-items-center {
