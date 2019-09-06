@@ -1,1 +1,85 @@
 /*...............................2.3 Footer .......................*/
+.site-footer {
+	background-color: #222222;
+	font-family: opensans;
+	font-size: 14px;
+}
+.footer-main {
+	padding-top: 62px;
+	border-bottom: 1px solid #393939;
+}
+.footer-main-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+  	grid-gap: 30px;
+}
+.footer-main-title {
+	font-family: Montserrat;
+	font-size: 16px;
+	color: #f7f7f7;
+	letter-spacing: 0.05rem;
+}
+.footer-main-content {
+	width: 260px;
+	border-top: 1px solid #393939;
+	line-height: 1.5em;
+}
+.footer-content {
+	padding-top: 27px;
+}
+.location {
+	padding-left: 97px;
+}
+.grid-location-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  	grid-gap: 30px;
+}
+.footer-main-content-nav {	
+	border-top: 1px solid #393939;
+	line-height: 1.5em;
+}
+.footer-main-content-lo {	
+	width: 263px;
+	border-top: 1px solid #393939;
+	line-height: 1.5em;
+}
+.content-col {
+	list-style-type: none;
+	padding-left: 0;
+}
+.address-text {
+	font-style: normal !important;
+}
+.col-grid {
+	display: grid;
+	grid-template-columns: 32px 231px;
+}
+.icon {
+	padding-top: 0.2em;
+}
+.link-social {
+	word-spacing: 31px;
+	margin-top: 1.4rem;
+}
+.name-company {
+	font-style: normal;
+	color: #fff;
+}
+.font-style-normal {
+	font-style: normal;
+}
+.heart {
+	color: #ff4628;
+}
+.footer-copyright-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  	grid-gap: 30px;
+}
+.copyright {
+	font-family: fontawesome;
+}
+.atm {
+	text-align: right;
+}

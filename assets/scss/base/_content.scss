@@ -9,14 +9,13 @@
 	position: relative;
 }
 .ads {
-	margin-top: 1px;
+	padding-top: 30px;
 	font-family: Montserrat;
 }
 .wrapper {
 	display: grid;
 	grid-template-columns: 750px 360px;
   	grid-gap: 30px;
-  	grid-auto-rows: 560px;
 }
 .ads-col-1 {
 	background-color: #eeeeee;
@@ -182,7 +181,7 @@
 .products-grid {
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);
-  	grid-gap: 49px;
+  	grid-gap: 47px;
 }
 .products-row {
 	display: grid;
@@ -271,8 +270,100 @@
 	top: 100%;
 	left: 92px;
 	border-bottom: 1px solid #000;
-	line-height: normal;
 }
 .blog-items {
-	margin-top: 50px;
+	margin-top: 80px;
+}
+.blog-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+  	grid-gap: 30px;
+  	
+}
+.img-blog {
+	position: relative;
+}
+.date-block-blog {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	z-index: 1;
+	left: 20px;
+	top: 22px;
+	background-color: #a1d1dd;
+}
+.border-blog-date {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fff;
+	margin: 6px 5px 4px 5px;
+	color: #fff;
+	text-align: center;
+}
+.date-line-1 {
+	margin-top: 6px;
+	margin-bottom: 0;
+	line-height: normal;
+}
+.date-line-2 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: normal;
+}
+.content-item-blog {
+	background-color: #fff;
+}
+.text-content {
+	padding-top: 19px;
+	padding-left: 19px;
+	padding-right: 35px;
+
+}
+.title-content-blog {
+	font-size: 16px;
+	color: #000;
+	line-height: normal;
+}
+.description-blog {
+	font-family: opensans;
+	color: #424242;
+	line-height: 1.5em;
+}
+.info-blog {
+    height: 55px;
+	border-top: 1px solid #ededed;
+	font-family: fontawesome;
+	font-size: 14px;
+	color: #c0c0c0;
+	padding-left: 19px;
+	padding-top: 0.8em;
+	padding-bottom: 0.2em;
+}
+.like {
+	margin-left: 2.2em;
+}
+.title-content-blog:hover {
+	color: #8262b5;
+	text-decoration: none;
+	cursor: pointer;
+}
+.load {
+	padding-top: 30px;
+	width: 56px;
+	margin-left: 542px;
+	margin-right: 542px;
+	padding-bottom: 59px;
+	align-items: center;
+}
+.circle {
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background-color: #b3a6c7;
+}
+.circle-select {
+	width: 13px;
+	height: 13px;
+	border-radius: 13px;
+	background-color: #8262b5;
 }
