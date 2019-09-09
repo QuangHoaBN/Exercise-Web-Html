@@ -175,7 +175,7 @@
 	margin-top: 29px;
 }
 .products-items {
-	font-family: fontawesome;
+	font-family: Font Awesome 5 Pro;
 	padding-top: 50px;
 }
 .products-grid {
@@ -325,14 +325,14 @@
 	line-height: normal;
 }
 .description-blog {
-	font-family: opensans;
+	font-family: Open Sans;
 	color: #424242;
 	line-height: 1.5em;
 }
 .info-blog {
     height: 55px;
 	border-top: 1px solid #ededed;
-	font-family: fontawesome;
+	font-family: Font Awesome 5 Pro;
 	font-size: 14px;
 	color: #c0c0c0;
 	padding-left: 19px;
@@ -355,15 +355,12 @@
 	padding-bottom: 59px;
 	align-items: center;
 }
-.circle {
-	width: 10px;
-	height: 10px;
-	border-radius: 10px;
-	background-color: #b3a6c7;
+.slick-dots li button::before {
+    font-size: 40px !important;
+    color: #8262b5 !important;
 }
-.circle-select {
-	width: 13px;
-	height: 13px;
-	border-radius: 13px;
-	background-color: #8262b5;
+.slick-dots li button {
+	color: #b3a6c7 !important;
 }
+
+
