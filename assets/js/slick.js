@@ -1,7 +1,3 @@
-import * from 'jquery-3.4.1.min.js';
-import * from 'jquery-migrate-1.4.1.min.js';
-import * from 'slick.min.js';
-import * from '../../home.html';
 $(document).ready(function(){
 	      $('.blog-items').slick({
 	      	infinite: true,
