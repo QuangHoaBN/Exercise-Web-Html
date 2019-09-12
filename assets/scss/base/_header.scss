@@ -24,6 +24,9 @@ header {
 	color: #525252;
 	align-items: center;
 }
+.dropdown-menu a {
+	font-weight: bold;
+}
 /*.............Default Before Responsive...........*/
 .display-main {
 	display: block;
@@ -107,13 +110,17 @@ header {
 }
 /*.............Navigation Dropdown Icon.............*/
 .dropdown {
-  position: relative;
   display: inline-block;
 }
+.dropdown-header-bot {
+  position: static;
+  display: inline-block;
+}
+
 .dropdown-menu-cog {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #fff;
   top: 0;
   left: 0;
   transform: translate3d(-80%, 70%, 0);
@@ -123,12 +130,15 @@ header {
 .dropdown-menu {
 	display: none;
 	position: absolute;
-	background-color: #f1f1f1;
- 	top: 0;
+	background-color: #fff;
+ 	top: 67px;
   	left: 0;
-  	transform: translate3d(-80%, 20%, 0);
   	z-index: 2;
   	text-align: center;
+  	width: 100%;
+}
+.dropdown-menu a {
+	color: black;
 }
 .show {
 	display: block;

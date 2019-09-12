@@ -64,6 +64,9 @@ header {
       -ms-flex-align: center;
           align-items: center; }
 
+.dropdown-menu a {
+  font-weight: bold; }
+
 /*.............Default Before Responsive...........*/
 .display-main {
   display: block; }
@@ -148,13 +151,16 @@ header {
 
 /*.............Navigation Dropdown Icon.............*/
 .dropdown {
-  position: relative;
+  display: inline-block; }
+
+.dropdown-header-bot {
+  position: static;
   display: inline-block; }
 
 .dropdown-menu-cog {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #fff;
   top: 0;
   left: 0;
   -webkit-transform: translate3d(-80%, 70%, 0);
@@ -165,13 +171,15 @@ header {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  top: 0;
+  background-color: #fff;
+  top: 67px;
   left: 0;
-  -webkit-transform: translate3d(-80%, 20%, 0);
-          transform: translate3d(-80%, 20%, 0);
   z-index: 2;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
+
+.dropdown-menu a {
+  color: black; }
 
 .show {
   display: block; }
@@ -536,9 +544,6 @@ header {
   .font-btn-before-ads-3 {
     left: calc(50% - 80px); } }
 @media (min-width: 320px) and (max-width: 575px) {
-  .ads-col-2 {
-    display: none; }
-
   .img {
     width: 100%;
     -o-object-fit: cover;
@@ -642,13 +647,20 @@ header {
 .heart {
   color: #ff4628; }
 
-.footer-copyright-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px; }
-
 .copyright {
-  font-family: Font Awesome 5 Pro; }
+  font-family: Font Awesome 5 Pro;
+  text-align: center; }
 
 .atm {
-  text-align: right; }
+  text-align: center; }
+
+/*....................Responsive.....................*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer-sub {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .link-social {
+    word-spacing: 10px; } }
+@media (max-width: 575px) {
+  .footer-main {
+    padding-bottom: 20px; } }
