@@ -64,6 +64,22 @@ header {
       -ms-flex-align: center;
           align-items: center; }
 
+/*.............Default Before Responsive...........*/
+.display-main {
+  display: block; }
+
+.display-sub {
+  display: none; }
+
+.header-footer-main {
+  color: #000;
+  display: block; }
+
+.header-footer-sub {
+  color: #000;
+  display: none; }
+
+/*.................................................*/
 .setting {
   margin-right: 30px; }
 
@@ -71,51 +87,127 @@ header {
   text-align: right; }
 
 .menu {
-  padding: 0.55em !important; }
+  padding: 0.55em !important;
+  margin-bottom: 0; }
 
 .hover:hover {
   color: #8262b5;
   text-decoration: none; }
-
-.header-footer {
-  color: #000; }
 
 .align-item-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
-.menu {
-  margin-bottom: 0; }
-
 .head-foo-right {
   padding-right: 0 !important; }
 
-.like-pe {
-  padding-right: 30px !important;
-  padding-left: 0 !important; }
+/*.............Custom Cart - Like Screen - Menu..........*/
+.dropbtn_menu {
+  font-size: 21px; }
 
-.cart-pe {
+.pe-cart {
+  font-size: 30px !important;
   padding-right: 0 !important;
   padding-left: 0 !important; }
 
-.pe-cart {
-  font-size: 30px !important; }
-
 .pe-like {
-  font-size: 30px !important; }
+  font-size: 30px !important;
+  padding-right: 30px !important;
+  padding-left: 0 !important; }
 
+.pe-like-sub {
+  display: none;
+  font-size: 21px;
+  color: black;
+  padding-right: 10px !important;
+  padding-left: 10px !important; }
+
+.pe-cart-sub {
+  display: none;
+  font-size: 21px;
+  color: black;
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+/*..............................................*/
 .head-foo-center {
   font-weight: bold; }
 
 .pad-right-item {
   padding-right: 56px !important; }
 
+.no-padding {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
 .mar-bot-0-pad-tobo-17 {
   margin-bottom: 0;
   padding-top: 17px;
   padding-bottom: 15px; }
 
+/*.............Navigation Dropdown Icon.............*/
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropdown-menu-cog {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate3d(-80%, 70%, 0);
+          transform: translate3d(-80%, 70%, 0);
+  z-index: 2;
+  text-align: left; }
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate3d(-80%, 20%, 0);
+          transform: translate3d(-80%, 20%, 0);
+  z-index: 2;
+  text-align: center; }
+
+.show {
+  display: block; }
+
+.dropdown-item-menu {
+  display: block; }
+
+/*.............Responsive Header.............*/
+@media (min-width: 320px) and (max-width: 575px) {
+  .head-padding {
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media (min-width: 320px) and (max-width: 1199px) {
+  .display-main {
+    display: none; }
+
+  .display-sub {
+    display: block; }
+
+  .header-footer-main {
+    display: none; }
+
+  .header-footer-sub {
+    display: block; }
+
+  .pe-cart {
+    display: none; }
+
+  .pe-like {
+    display: none; }
+
+  .pe-cart-sub {
+    display: block; }
+
+  .pe-like-sub {
+    display: block; } }
 /*...............................2.2 Content .......................*/
 /*........................2.2.1 Ads ...................*/
 @media (min-width: 1200px) {
@@ -125,64 +217,34 @@ header {
   padding-top: 30px;
   font-family: Montserrat; }
 
-.ads-col-1 {
-  background-color: #eeeeee; }
-
-.ads-col-2 {
-  display: grid;
-  grid-template-rows: 200px 330px;
-  grid-gap: 30px; }
-
 .ads-row-1 {
-  background-color: #cad7df;
   position: relative; }
 
 .ads-row-2 {
-  background-image: url("../images/content/ads/bg-ads-3.png");
-  position: relative; }
+  position: relative;
+  margin-top: 30px; }
 
-.img-ads-1 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 2; }
-
-.font-behind {
-  width: 377px;
-  position: absolute;
-  top: 230px;
-  right: 93px;
-  left: 282px;
-  margin-bottom: auto;
-  z-index: 1;
-  text-align: right;
-  color: #e1e1e1; }
-
-.blyszak {
-  font-weight: bold;
-  font-size: 80px; }
-
-.eyewear {
-  font-size: 50px; }
+.duplicate-ads-3 {
+  display: none; }
 
 .margin-bottom-0 {
   margin-bottom: 0; }
 
-.font-btn-before-ads-2 {
-  width: 324px;
+.font-btn-before-ads-1 {
   position: absolute;
-  right: 88px;
-  top: 320px;
-  left: 340px;
-  z-index: 3; }
+  top: calc(50% + 80px);
+  left: calc(50% + 113px);
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .font-btn-before-ads-3 {
-  width: 117px;
   position: absolute;
-  right: 203px;
-  top: 123px;
-  left: 40px;
-  z-index: 1; }
+  top: calc(50% + 13px);
+  left: calc(50% - 99px);
+  z-index: 1;
+  -webkit-transform: translate(-50px, -50px);
+          transform: translate(-50px, -50px); }
 
 .name-ads-1 {
   font-family: Pacifico;
@@ -190,8 +252,6 @@ header {
   color: #000; }
 
 .btn {
-  width: 106px;
-  height: 40px;
   background-color: #8262b5;
   border-radius: 0;
   font-size: 14px;
@@ -208,24 +268,13 @@ header {
   margin-left: 1px;
   margin-top: 14px; }
 
-.img-ads-2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2; }
-
-.border {
-  z-index: 1;
-  outline: 1px solid #fff;
-  outline-offset: -35px; }
-
 .name-ads-2 {
-  width: 187px;
   position: absolute;
-  z-index: 3;
-  top: 88px;
-  right: 116px;
-  left: 57px; }
+  z-index: 1;
+  top: calc(50% + 6px);
+  left: calc(50% - 16.5px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .name-row-1 {
   letter-spacing: 0.2em;
@@ -285,8 +334,7 @@ header {
   position: absolute;
   width: 118px;
   height: 40px;
-  top: 278px;
-  right: 139px;
+  bottom: 5px;
   left: 5px;
   z-index: 2;
   background-color: #fff;
@@ -326,6 +374,20 @@ header {
   padding-top: 47px; }
 
 /*........................2.2.2 Blogs ...................*/
+/*...........Default Before Resposive..............*/
+.img-blog-1-sub {
+  display: none !important; }
+
+.img-blog-2-sub {
+  display: none !important; }
+
+.img-blog-3-sub {
+  display: none !important; }
+
+/*.................................................*/
+.padding-bottom {
+  padding-bottom: 50px; }
+
 .blogs-content {
   margin-top: 73px;
   background-image: url("../images/content/blogs/bg-blog.jpeg");
@@ -406,7 +468,7 @@ header {
   line-height: normal; }
 
 .description-blog {
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   color: #424242;
   line-height: 1.5em; }
 
@@ -445,15 +507,89 @@ header {
 .slick-dots li button {
   color: #b3a6c7 !important; }
 
+/*.................Responsive Body......................*/
+@media (min-width: 376px) and (max-width: 575px) {
+  .products-items .col-12 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%; }
+
+  .img-blog-1-main {
+    display: none !important; }
+
+  .img-blog-2-main {
+    display: none !important; }
+
+  .img-blog-3-main {
+    display: none !important; }
+
+  .img-blog-1-sub {
+    display: block !important; }
+
+  .img-blog-2-sub {
+    display: block !important; }
+
+  .img-blog-3-sub {
+    display: block !important; } }
+@media (min-width: 320px) and (max-width: 375px) {
+  .font-btn-before-ads-3 {
+    left: calc(50% - 80px); } }
 @media (min-width: 320px) and (max-width: 575px) {
-  img {
+  .ads-col-2 {
+    display: none; }
+
+  .img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+  .name-ads-1 {
+    font-size: 17px;
+    white-space: pre; }
+
+  .font-btn-before-ads-1 {
+    top: calc(50% + 45px);
+    left: calc(50% + 50px); }
+
+  .margin-btn-ads-1 {
+    margin-left: 70px; }
+
+  .ads-col-2 {
+    margin-top: 10px; }
+
+  .ads-row-2 {
+    margin-top: 10px; }
+
+  .btn {
+    font-size: 10px; } }
+@media (min-width: 576px) and (max-width: 767px) {
+  .img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover; } }
+@media (min-width: 768px) and (max-width: 1080px) {
+  .img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; } }
+@media (min-width: 415px) and (max-width: 991px) {
+  .ads-row-1 {
+    display: none; }
+
+  .duplicate-ads-3 {
+    display: block; } }
+@media (min-width: 415px) and (max-width: 767px) {
+  .font-btn-before-ads-3 {
+    left: calc(50% - 60px); }
+
+  .font-btn-before-ads-1 {
+    top: calc(50% + 50px);
+    left: calc(50% + 70px); } }
 /*...............................2.3 Footer .......................*/
 .site-footer {
   background-color: #222222;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px; }
 
 .footer-main {
@@ -473,7 +609,7 @@ header {
 .footer-content {
   padding-top: 27px; }
 
-.grid-location-content {
+.grid-nav-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px; }
@@ -482,12 +618,12 @@ header {
   list-style-type: none;
   padding-left: 0; }
 
+.footer-content li:hover {
+  color: #fff;
+  text-decoration: underline; }
+
 .address-text {
   font-style: normal !important; }
-
-.col-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
 
 .icon {
   padding-top: 0.2em; }

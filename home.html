@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="assets/css/style.min.css">
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/slick-theme.css">
+
 </head>
 <body>
 	<!--header-->
@@ -17,20 +18,29 @@
 				<div class="flex-grow-1 bd-highlight">
 					<p class="far fa-bookmark mar-bot-0-pad-tobo-17"> Welcome to Franco - an e-Commerce PSD Template!</p>
 				</div>
-				<div class="flex-grow-1 bd-highlight">
+				<div class="display-main flex-grow-1 bd-highlight">
 					<div class="d-plex header-top-right">
 						<p href="" class="setting far fa-cog mar-bot-0-pad-tobo-17"> Shop Setting</p>
 						<p href="" class="login far fa-lock mar-bot-0-pad-tobo-17"> Member Login</p>
 					</div>
 				</div>
+				<div class="display-sub bd-highlight">
+					<div class="d-plex header-top-right dropdown">
+						<p id="click" onclick="click_cog()" class="dropbtn far fa-user-cog mar-bot-0-pad-tobo-17"></p>
+						<div id="user_cog_id" class="dropdown-menu-cog">
+							<a href="#shopsetting" class="dropdown-item far fa-cog"> Shop Setting</a>
+							<a href="#login" class="dropdown-item far fa-lock"> Member Login</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="header-footer head-padding">
-			<div class="d-flex media-flex justify-content-between align-item-center">
-				<div class="d-flex logo">
-					<img src="assets/images/header/logo/franco.png" alt="logo-franco">
+		<div class="header-footer-main head-padding">
+			<div class="d-flex justify-content-between align-item-center">
+				<div class="d-flex">
+					<img class="img-logo-main" src="assets/images/header/logo/franco.png" alt="logo-franco">
 				</div>
-				<div class="d-flex media-flex justify-content-between align-item-center head-foo-center">
+				<div class="d-flex justify-content-between align-item-center head-foo-center">
 					<p href="" class="menu pad-right-item p-2 bd-highlight hover">HOME</p>
 					<p href="" class="menu pad-right-item p-2 bd-highlight hover">WOMAN</p>
 					<p href="" class="menu pad-right-item p-2 bd-highlight hover">MEN</p>
@@ -46,7 +56,32 @@
 					<p href="" class="menu cart-pe pe-7s-cart pe-cart"></p>
 					<p href="" class="menu like-pe pe-7s-like pe-like"></p>
 				</div>
-			</div>	
+			</div>
+		</div>
+		<div class="header-footer-sub head-padding">	
+			<div class="d-flex justify-content-between align-item-center">
+				<div class="d-flex no-padding p-2 flex-grow-1 flex-sm-grow-1 flex-md-grow-1 flex-lg-grow-1 flex-xl-grow-1">
+					<img class="img-logo-sub" src="assets/images/header/logo/franco-mini.png" alt="logo-franco">
+				</div>
+				<div class="d-flex no-padding p-2 align-item-center">
+						<div class="dropdown">
+							<p id="click_menu" onclick="click_menu()" class="dropbtn_menu fad fa-bars mar-bot-0-pad-tobo-17"></p>
+							<div id="menu_id" class="dropdown-menu">
+								<a href="#home" class="dropdown-item-menu">Home</a>
+								<a href="#women" class="dropdown-item-menu">Women</a>
+								<a href="#men" class="dropdown-item-menu">Men</a>
+								<a href="#about" class="dropdown-item-menu">About Us</a>
+								<a href="#blog" class="dropdown-item-menu">Blog</a>
+								<a href="#colections" class="dropdown-item-menu">Colections</a>
+								<a href="#contact" class="dropdown-item-menu">Contact</a>
+								<a href="#women" class="dropdown-item-menu">Women</a>
+								<a href="#search" class="far fa-search dropdown-item-menu"></a>
+							</div>
+						</div>
+						<a href="#like" class="pe-like-sub pe-7s-like dropdown-item-menu pe-like"></a>
+						<a href="#cart" class="pe-cart-sub pe-7s-cart dropdown-item-menu pe-cart"></a>
+				</div>
+			</div>
 		</div>
 	</header>
 	<!--content-->
@@ -55,32 +90,43 @@
 			<div class="container">
 				<div class="ads">
 					<div class="row">
-						<div class="ads-col-1 col-xl-8 col-lg-8 col-md-8 col-sm-8">
-							<img class="img-ads-1" src="assets/images/content/ads/bg-ads-1.png" alt="ads 1">
-							<div class="font-behind">
-								<p class="blyszak">BLYSZAK</p>
-								<p class="eyewear">EYEWEAR</p>
-							</div>
-							<div class="font-btn-before-ads-2">
+						<div class="ads-col-1 col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12">
+							<img class="img img-ads-1" src="assets/images/content/ads/bg-ads-1.png" alt="ads 1">
+							<div class="font-btn-before-ads-1">
 								<p class="name-ads-1">Two High-end Materials</p>
 								<button class="btn margin-btn-ads-1">SHOP NOW</button>
 							</div>
 						</div>
-						<div class="ads-col-2 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-							<div class="ads-row-1 border">
-								<img class="img-ads-2" src="assets/images/content/ads/bg-ads-2.png" alt="ads 1">
-								<div class="name-ads-2">
-									<p class="name-row-1">SMALL THING</p>
-									<p class="name-row-2">MAKE DIFFERENT</p>
+						<div class="ads-col-2 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+							<div class="row ads-row-1">
+								<div class="col-12 col-xl-12 col-lg-12">
+									<img class="img img-ads-2" src="assets/images/content/ads/bg-ads-2.png" alt="ads 2">
+									<div class="name-ads-2">
+										<p class="name-row-1">SMALL THING</p>
+										<p class="name-row-2">MAKE DIFFERENT</p>
+									</div>
 								</div>
 							</div>
-							<div class="ads-row-2">
-								<div class="font-btn-before-ads-3">
-									<div class="name-ads-3">
-										<p class="name-row-1">FOLIO</p>
-										<p class="name-row-2">BACKPACK</p>
+							<div class="row ads-row-2">
+								<div class="col-12 col-xl-12 col-lg-12 col-md-6 col-sm-6">	
+									<img class="img img-ads-3" src="assets/images/content/ads/bg-ads-3.png" alt="ads 3">
+									<div class="font-btn-before-ads-3">
+										<div class="name-ads-3">
+											<p class="name-row-1">FOLIO</p>
+											<p class="name-row-2">BACKPACK</p>
+										</div>
+										<button class="btn margin-btn-ads-2">SHOP NOW</button>
 									</div>
-									<button class="btn margin-btn-ads-2">SHOP NOW</button>
+								</div>
+								<div class="duplicate-ads-3 col-12 col-xl-12 col-lg-12 col-md-6 col-sm-6">	
+									<img class="img img-ads-3" src="assets/images/content/ads/bg-ads-3.png" alt="ads 3">
+									<div class="font-btn-before-ads-3">
+										<div class="name-ads-3">
+											<p class="name-row-1">FOLIO</p>
+											<p class="name-row-2">BACKPACK</p>
+										</div>
+										<button class="btn margin-btn-ads-2">SHOP NOW</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -89,7 +135,7 @@
 				<div class="products">
 					<div class="products-title">
 						<div class="row">
-							<div class="products-title-padd col-xl-12 col-lg-12 col-md-12 col-sm-12">
+							<div class="products-title-padd col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
 								<p class="products-title-line-1">FRANCO</p>
 								<p class="products-title-line-2">FEATURED ITEMS</p>
 							</div>
@@ -97,9 +143,9 @@
 					</div>
 					<div class="products-items">
 						<div class="row row-1">
-							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 								<div class="products-img">
-									<img class="product-img-1" src="assets/images/content/products/pro-1.jpeg" alt="product 1">
+									<img class="img product-img-1" src="assets/images/content/products/pro-1.jpeg" alt="product 1">
 									<button class="btn add-to-cart">ADD TO CART</button>
 								</div>
 								<div class="products-text">
@@ -115,9 +161,9 @@
 									<p class="value">$84.00</p>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 								<div class="products-img">
-									<img class="product-img-2" src="assets/images/content/products/pro-2.jpeg" alt="product 2">
+									<img class="img product-img-2" src="assets/images/content/products/pro-2.jpeg" alt="product 2">
 									<button class="btn add-to-cart">ADD TO CART</button>
 								</div>
 								<div class="products-text">
@@ -133,9 +179,9 @@
 									<p class="value">$84.00</p>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 								<div class="products-img">
-									<img class="product-img-3" src="assets/images/content/products/pro-3.jpeg" alt="product 3">
+									<img class="img product-img-3" src="assets/images/content/products/pro-3.jpeg" alt="product 3">
 									<button class="btn add-to-cart">ADD TO CART</button>
 								</div>
 								<div class="products-text">
@@ -150,9 +196,9 @@
 									<p class="value">$84.00</p>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 								<div class="products-img">
-									<img class="product-img-4" src="assets/images/content/products/pro-4.jpeg" alt="product 4">
+									<img class="img product-img-4" src="assets/images/content/products/pro-4.jpeg" alt="product 4">
 									<button class="btn add-to-cart">ADD TO CART</button>
 								</div>
 								<div class="products-text">
@@ -170,9 +216,9 @@
 							</div>
 						</div>
 						<div class="row row-2">
-							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 								<div class="products-img">
-									<img class="product-img-5" src="assets/images/content/products/pro-1.jpeg" alt="product 5">
+									<img class="img product-img-5" src="assets/images/content/products/pro-1.jpeg" alt="product 5">
 									<button class="btn add-to-cart">ADD TO CART</button>
 								</div>
 								<div class="products-text">
@@ -188,9 +234,9 @@
 									<p class="value">$84.00</p>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 								<div class="products-img">
-									<img class="product-img-6" src="assets/images/content/products/pro-6.jpeg" alt="product 6">
+									<img class="img product-img-6" src="assets/images/content/products/pro-6.jpeg" alt="product 6">
 									<button class="btn add-to-cart">ADD TO CART</button>
 								</div>
 								<div class="products-text">
@@ -206,9 +252,9 @@
 									<p class="value">$84.00</p>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 								<div class="products-img">
-									<img class="product-img-7" src="assets/images/content/products/pro-7.jpeg" alt="product 7">
+									<img class="img product-img-7" src="assets/images/content/products/pro-7.jpeg" alt="product 7">
 									<button class="btn add-to-cart">ADD TO CART</button>
 								</div>
 								<div class="products-text">
@@ -223,9 +269,9 @@
 									<p class="value">$84.00</p>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 								<div class="products-img">
-									<img class="product-img-8" src="assets/images/content/products/pro-8.jpeg" alt="product 8">
+									<img class="img product-img-8" src="assets/images/content/products/pro-8.jpeg" alt="product 8">
 									<button class="btn add-to-cart">ADD TO CART</button>
 								</div>
 								<div class="products-text">
@@ -248,17 +294,18 @@
 			</div>
 		</div>
 		<div class="blogs-content">
-			<div class="container">
+			<div class="container padding-bottom">
 				<div class="row blog-title">
 					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 						<p class="title-line-1">LATEST</p>
 						<p class="title-line-2">NEWS & EVENTS</p>
 					</div>	
 				</div>
-				<div class="blog-items blog-grid">
-					<div class="blog-items-1">
+				<div class="row blog-items blog-grid">
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
 						<div class="img-blog">
-							<img src="assets/images/content/blogs/blog-1.jpeg" alt="blog 1">
+							<img class="img img-blog-1-main" src="assets/images/content/blogs/blog-1.jpeg" alt="blog 1">
+							<img class="img img-blog-1-sub" src="assets/images/content/blogs/blog-1-full.jpeg" alt="blog 1">
 							<div class="date-block-blog">
 								<div class="border-blog-date">
 									<p class="date-line-1">Jan</p>
@@ -279,9 +326,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="blog-items-2">
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
 						<div class="img-blog">
-							<img src="assets/images/content/blogs/blog-2.jpeg" alt="blog 2">
+							<img class="img img-blog-2-main" src="assets/images/content/blogs/blog-2.jpeg" alt="blog 2">
+							<img class="img img-blog-2-sub" src="assets/images/content/blogs/blog-2-full.jpeg" alt="blog 1">
 							<div class="date-block-blog">
 								<div class="border-blog-date">
 									<p class="date-line-1">Jan</p>
@@ -302,9 +350,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="blog-items-3">
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
 						<div class="img-blog">
-							<img src="assets/images/content/blogs/blog-3.jpeg" alt="blog 3">
+							<img class="img img-blog-3-main" src="assets/images/content/blogs/blog-3.jpeg" alt="blog 3">
+							<img class="img img-blog-3-sub" src="assets/images/content/blogs/blog-3-full.jpeg" alt="blog 1">
 							<div class="date-block-blog">
 								<div class="border-blog-date">
 									<p class="date-line-1">Jan</p>
@@ -325,7 +374,7 @@
 							</div>
 						</div>
 					</div>
-				</div>	
+				</div>
 			</div>
 		</div>
 	</div>
@@ -349,7 +398,7 @@
 					<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
 					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
 						<p class="footer-main-title">Navigation</p>
-						<div class="footer-main-content grid-location-content">
+						<div class="footer-main-content grid-nav-content">
 							<ul class="footer-content content-col">
 								<li>Home</li>
 								<li>About Us</li>
@@ -408,7 +457,7 @@
 		<div class="footer-copyright">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 main-container">
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 						<div class="footer-copyright-grid">
 							<div class="copyright">
 								<i class="far fa-copyright"> Copyright 2015 & Made with </i>
@@ -433,5 +482,8 @@
 	<script type="text/javascript" src="assets/js/jquery-migrate-1.4.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/slick.min.js"></script>
 	<script type="text/javascript" src="assets/js/slick.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/click_menu_nav.js"></script>
 </body>
 </html>

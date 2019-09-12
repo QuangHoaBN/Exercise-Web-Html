@@ -1,7 +1,7 @@
 /*...............................2.3 Footer .......................*/
 .site-footer {
 	background-color: #222222;
-	font-family: Open Sans;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 }
 .footer-main {
@@ -21,7 +21,7 @@
 .footer-content {
 	padding-top: 27px;
 }
-.grid-location-content {
+.grid-nav-content {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
   	grid-gap: 30px;
@@ -30,12 +30,12 @@
 	list-style-type: none;
 	padding-left: 0;
 }
+.footer-content li:hover {
+	color: #fff;
+	text-decoration: underline;
+}
 .address-text {
 	font-style: normal !important;
-}
-.col-grid {
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
 }
 .icon {
 	padding-top: 0.2em;

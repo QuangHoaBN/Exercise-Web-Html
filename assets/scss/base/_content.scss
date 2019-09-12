@@ -9,64 +9,32 @@
 	padding-top: 30px;
 	font-family: Montserrat;
 }
-.ads-col-1 {
-	background-color: #eeeeee;
-}
-.ads-col-2 {
-	display: grid;
-	grid-template-rows: 200px 330px;
-  	grid-gap: 30px;
-}
 .ads-row-1 {
-	background-color: #cad7df;
 	position: relative;
 }
 .ads-row-2 {
-	background-image: url("../images/content/ads/bg-ads-3.png");
 	position: relative;
+	margin-top: 30px;
 }
-.img-ads-1 {
-	position: absolute;
-	left:0;
-	bottom: 0;
-	z-index: 2;
-}
-.font-behind {
-	width: 377px;
-	position: absolute;
-	top: 230px;
-	right: 93px;
-	left: 282px;
-	margin-bottom: auto;
-	z-index: 1;
-	text-align: right;
-	color: #e1e1e1;
-}
-.blyszak {
-	font-weight: bold;
-	font-size: 80px;
-}
-.eyewear {
-	font-size: 50px;
+.duplicate-ads-3 {
+	display: none;
 }
 .margin-bottom-0 {
 	margin-bottom: 0;
 }
-.font-btn-before-ads-2 {
-	width: 324px;
+.font-btn-before-ads-1 {
 	position: absolute;
-	right: 88px;
-	top: 320px;
-	left: 340px;
-	z-index: 3;
+	top: calc(50% + 80px);
+	left: calc(50% + 113px);
+	z-index: 1;
+	transform: translate(-50%, -50%)
 }
 .font-btn-before-ads-3 {
-	width: 117px;
 	position: absolute;
-	right: 203px;
-	top: 123px;
-	left: 40px;
+	top: calc(50% + 13px);
+	left: calc(50% - 99px);
 	z-index: 1;
+	transform: translate(-50px, -50px);
 }
 .name-ads-1 {
 	font-family: Pacifico;
@@ -74,8 +42,6 @@
 	color: #000;
 }
 .btn {
-	width: 106px;
-	height: 40px;
 	background-color: #8262b5;
 	border-radius: 0;
 	font-size: 14px;
@@ -92,24 +58,12 @@
 	margin-left: 1px;
 	margin-top: 14px;
 }
-.img-ads-2 {
-	position: absolute;
-	top:0;
-	right: 0;
-	z-index: 2;
-}
-.border {
-	z-index: 1;
-	outline: 1px solid #fff;
-    outline-offset: -35px;
-}
 .name-ads-2 {
-	width: 187px;
 	position: absolute;
-	z-index: 3;
-	top: 88px; 
-	right: 116px;
-	left: 57px;
+	z-index: 1;
+	top: calc(50% + 6px);
+	left: calc(50% - 16.5px);
+	transform: translate(-50%, -50%);
 }
 .name-row-1 {
 	letter-spacing: 0.2em;
@@ -169,8 +123,7 @@
 	position: absolute;
 	width: 118px;
 	height: 40px;
-	top: 278px; 
-	right: 139px;
+	bottom: 5px; 
 	left: 5px;
 	z-index: 2;
 	background-color: #fff;
@@ -210,6 +163,20 @@
 	padding-top: 47px;
 }
 /*........................2.2.2 Blogs ...................*/
+/*...........Default Before Resposive..............*/
+.img-blog-1-sub {
+	display: none !important;
+}
+.img-blog-2-sub {
+	display: none !important;
+}
+.img-blog-3-sub {
+	display: none !important;
+}
+/*.................................................*/
+.padding-bottom {
+	padding-bottom: 50px;
+}
 .blogs-content {
 	margin-top: 73px;
 	background-image: url("../images/content/blogs/bg-blog.jpeg");
@@ -291,7 +258,7 @@
 	line-height: normal;
 }
 .description-blog {
-	font-family: Open Sans;
+	font-family: 'Open Sans', sans-serif;
 	color: #424242;
 	line-height: 1.5em;
 }
@@ -328,11 +295,93 @@
 .slick-dots li button {
 	color: #b3a6c7 !important;
 }
-@media (min-width: 320px) and (max-width: 575px){
-	img {
+
+/*.................Responsive Body......................*/
+@media (min-width: 376px) and (max-width: 575px) {
+	.products-items .col-12 {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	.img-blog-1-main {
+		display: none !important;
+	}
+	.img-blog-2-main {
+		display: none !important;
+	}
+	.img-blog-3-main {
+		display: none !important;
+	}
+	.img-blog-1-sub {
+		display: block !important;
+	}
+	.img-blog-2-sub {
+		display: block !important;
+	}
+	.img-blog-3-sub {
+		display: block !important;
+	}
+}
+@media (min-width: 320px) and (max-width: 375px) {
+	.font-btn-before-ads-3 {
+		left: calc(50% - 80px);
+	}
+}
+@media (min-width: 320px) and (max-width: 575px) {
+	.ads-col-2 {
+		display: none;
+	}
+	.img {
+		width: 100%;
+		object-fit: cover;
+	}
+	.name-ads-1 {
+		font-size: 17px;
+		white-space: pre;
+	}
+	.font-btn-before-ads-1 {
+		top: calc(50% + 45px);
+		left: calc(50% + 50px);
+	}
+	.margin-btn-ads-1 {
+		margin-left: 70px;
+	}
+	.ads-col-2 {
+		margin-top: 10px;
+	}
+	.ads-row-2 {
+		margin-top: 10px;
+	}
+	.btn {
+		font-size: 10px;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+	.img {
 		width: 100%;
 		object-fit: cover;
 	}
 }
-
+@media (min-width: 768px) and (max-width: 1080px) {
+	.img {
+		width: 100%;
+		object-fit: cover;
+	}
+}
+@media (min-width: 415px) and (max-width: 991px) {
+	.ads-row-1 {
+		display: none;
+	}
+	.duplicate-ads-3 {
+		display: block;
+	}
+}
+@media (min-width: 415px) and (max-width: 767px) {
+	.font-btn-before-ads-3 {
+		left: calc(50% - 60px);
+	}
+	.font-btn-before-ads-1 {
+		top: calc(50% + 50px);
+		left: calc(50% + 70px);
+	}
+}
 

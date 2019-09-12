@@ -12,7 +12,7 @@ body {
 header {
 	max-width: 1920px;
 	font-family: Font Awesome 5 Pro;
-	font-size:14px;
+	font-size: 14px;
 	border-bottom: 1px solid #ddd;
 }
 .head-padding {
@@ -24,6 +24,22 @@ header {
 	color: #525252;
 	align-items: center;
 }
+/*.............Default Before Responsive...........*/
+.display-main {
+	display: block;
+}
+.display-sub {
+	display: none;
+}
+.header-footer-main {
+	color: #000;
+	display: block;
+}
+.header-footer-sub {
+	color: #000;
+	display: none;
+}
+/*.................................................*/
 .setting {
 	margin-right: 30px;
 }
@@ -32,45 +48,125 @@ header {
 }
 .menu {
 	padding: 0.55em !important;
+	margin-bottom: 0;
 }
 .hover:hover {
 	color: #8262b5;
 	text-decoration: none;
 }
-.header-footer {
-	color: #000;
-}
 .align-item-center {
 	align-items: center;
-}
-.menu {
-	margin-bottom: 0;
 }
 .head-foo-right {
 	padding-right: 0 !important;
 }
-.like-pe {
-	padding-right: 30px !important;
-	padding-left: 0 !important;
-}
-.cart-pe {
-	padding-right: 0 !important;
-	padding-left: 0 !important;
+/*.............Custom Cart - Like Screen - Menu..........*/
+.dropbtn_menu {
+	font-size: 21px;
 }
 .pe-cart {
 	font-size: 30px !important;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
 }
 .pe-like {
 	font-size: 30px !important;
+	padding-right: 30px !important;
+	padding-left: 0 !important;
 }
+
+.pe-like-sub {
+	display: none;
+	font-size: 21px;
+	color: black;
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+}
+.pe-cart-sub {
+	display: none;
+	font-size: 21px;
+	color: black;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+/*..............................................*/
 .head-foo-center {
 	font-weight: bold;
 }
 .pad-right-item {
 	padding-right: 56px !important;
 }
+.no-padding {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
 .mar-bot-0-pad-tobo-17 {
 	margin-bottom: 0;
 	padding-top: 17px;
 	padding-bottom: 15px;
+}
+/*.............Navigation Dropdown Icon.............*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-menu-cog {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  top: 0;
+  left: 0;
+  transform: translate3d(-80%, 70%, 0);
+  z-index: 2;
+  text-align: left;
+}
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+ 	top: 0;
+  	left: 0;
+  	transform: translate3d(-80%, 20%, 0);
+  	z-index: 2;
+  	text-align: center;
+}
+.show {
+	display: block;
+}
+.dropdown-item-menu {
+	display: block;
+}
+
+/*.............Responsive Header.............*/
+@media (min-width: 320px) and (max-width: 575px) {
+	.head-padding {
+		padding-left: 10px;
+		padding-right:10px;
+	}
+}
+@media (min-width: 320px) and (max-width: 1199px) {
+	.display-main {
+		display: none;
+	}
+	.display-sub {
+		display: block;
+	}
+	.header-footer-main {
+		display: none;
+	}
+	.header-footer-sub {
+		display: block;
+	}
+	.pe-cart {
+		display: none;
+	}
+	.pe-like {
+		display: none;
+	}
+	.pe-cart-sub {
+		display: block;
+	}
+	.pe-like-sub {
+		display: block;
+	}
 }
